@@ -12,7 +12,12 @@ window.onload = () => {
 }
 
 function displayNotinication(){
-    debugger;
+    const options = {
+        body : 'Here is a notification body!',
+        icon : 'images/hello-icon-144.png',
+        vibration: [100, 50,100],
+        data : { identity : 1 }
+    }
     if(Notification.permission === 'granted')
     {
         navigator.serviceWorker.getRegistration()
