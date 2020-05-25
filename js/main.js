@@ -15,8 +15,8 @@ function displayNotinication(){
     if(Notification.permission === 'granted')
     {
         const actions = [
-            {action: 'go', title: 'Go to the site', icon : 'check.png' },
-            {action: 'go', title: 'no Thank you', icon : 'check.png' }
+                {action: 'go', title: 'Go to the site', icon : 'check.png' }, 
+                {action: 'go', title: 'no Thank you', icon : 'check.png' }
             ];
         const options = {
             body : 'Here is a notification body!',

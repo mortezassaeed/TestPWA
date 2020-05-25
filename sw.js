@@ -23,3 +23,20 @@ self.addEventListener('fetch', function (e) {
         })
     );
 });
+
+/*Handle notifications */
+self.addEventListener('notificationclick', event =>{
+
+const notification = event.notification;
+const action = event.action;
+console.log(event.notification)
+if(action === 'close')
+{
+    notification.close();
+}
+else{
+    clients.openWindow('https://google.com')
+}
+
+
+});
