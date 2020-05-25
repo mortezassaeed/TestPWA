@@ -20,4 +20,9 @@ function displayNotinication(){
             reg.showNotification('hellow world')
         })
     }
+    else{
+        Notification.requestPermission(stat => {
+            console.log('Status fot notification is' + status)
+        })
+    }
 }
